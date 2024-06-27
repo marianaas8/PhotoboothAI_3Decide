@@ -13,9 +13,10 @@ Bem-vindo ao Photobooth AI, uma aplicação interativa que permite aos utilizado
 
 Antes de começar, necessitará de criar contas e obter chaves de API tanto do DreamStudio como do ClipDrop:
 
-1. **Criar Contas**:
+1. **Obter API's**:
    - **DreamStudio**: Registe-se em [DreamStudio](https://dreamstudio.com) e obtenha a sua chave de API. DreamStudio fornece 25 créditos iniciais que podem ser usados para adquirir transformações adicionais.
    - **ClipDrop**: Registe-se em [ClipDrop](https://clipdrop.co) e obtenha a sua chave de API. ClipDrop oferece 100 créditos iniciais que podem ser utilizados para substituição de fundo e outras funcionalidades.
+   - Depois de obter as API's, substitua-as em `API'S.py`, em "your_clipdrop_api" e "your_dreamstudio_api".
 
 2. **Download da Pasta de Imagens**:
    - Existe uma pasta zipada disponível com as imagens usadas na Photobooth. Faça o download aqui [Icons.zip](https://drive.google.com/file/d/1JiDvgkUUgC67-279M98mjCBfky9KwIi3/view?usp=sharing). Certifique-se de descomprimir a pasta antes de utilizar as imagens.
