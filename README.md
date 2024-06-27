@@ -18,7 +18,7 @@ Antes de começar, necessitará de criar contas e obter chaves de API tanto do D
    - **ClipDrop**: Registe-se em [ClipDrop](https://clipdrop.co) e obtenha a sua chave de API. ClipDrop oferece 100 créditos iniciais que podem ser utilizados para substituição de fundo e outras funcionalidades.
 
 2. **Download da Pasta de Imagens**:
-   - Existe uma pasta zipada disponível com as imagens usadas na Photobooth. Faça o download em [TransferNow](https://www.transfernow.net/dl/icons_images). Certifique-se de descomprimir a pasta antes de utilizar as imagens.
+   - Existe uma pasta zipada disponível com as imagens usadas na Photobooth. Faça o download aqui [Icons.zip](https://drive.google.com/file/d/1JiDvgkUUgC67-279M98mjCBfky9KwIi3/view?usp=sharing). Certifique-se de descomprimir a pasta antes de utilizar as imagens.
 
 3. **Instalação**
 
