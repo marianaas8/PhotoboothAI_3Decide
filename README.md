@@ -17,7 +17,10 @@ Antes de começar, necessitará de criar contas e obter chaves de API tanto do D
    - **DreamStudio**: Registe-se em [DreamStudio](https://dreamstudio.com) e obtenha a sua chave de API. DreamStudio fornece 25 créditos iniciais que podem ser usados para adquirir transformações adicionais.
    - **ClipDrop**: Registe-se em [ClipDrop](https://clipdrop.co) e obtenha a sua chave de API. ClipDrop oferece 100 créditos iniciais que podem ser utilizados para substituição de fundo e outras funcionalidades.
 
-2. **Instalação**
+2. **Download da Pasta de Imagens**:
+   - Existe uma pasta zipada disponível com as imagens usadas na Photobooth. Faça o download em [TransferNow](https://www.transfernow.net/dl/icons_images). Certifique-se de descomprimir a pasta antes de utilizar as imagens.
+
+3. **Instalação**
 
    ```bash
    git clone https://github.com/seu-nome-de-utilizador/photobooth-ai.git
@@ -25,7 +28,7 @@ Antes de começar, necessitará de criar contas e obter chaves de API tanto do D
    pip install -r requirements.txt
    ```
 
-3. **Executar a Aplicação**
+4. **Executar a Aplicação**
    ```bash
    python main.py
    ```
