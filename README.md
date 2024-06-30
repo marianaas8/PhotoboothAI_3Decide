@@ -1,6 +1,6 @@
 # Photobooth AI
 
-Esta aplicação interativa permite que os utilizadores transformem as suas fotos utilizando diversos modelos de IA e APIs. Esta aplicação no estilo de cabine fotográfica oferece opções para transportar-se para diferentes lugares, transformar-se em super-heróis, trocar de roupa, praticar desportos, assumir diferentes profissões ou estrelar os seus filmes favoritos.
+Bem-vindo ao Photobooth AI, uma aplicação interativa que permite aos utilizadores transformar as suas fotos utilizando diversos modelos de IA e APIs. Esta aplicação no estilo de cabine fotográfica oferece opções para transportar-se para diferentes lugares, transformar-se em super-heróis, trocar de roupa, praticar desportos, assumir diferentes profissões ou estrelar os seus filmes favoritos.
 
 ## Recursos
 

@@ -14,14 +14,12 @@ class OutfitDesignerApp:
         self.root.title("Outfit Designer")  # Definir título da janela
 
         self.image_path = image_path  # Caminho da imagem fornecida pelo usuário
-        self.hairstyle = None  # Inicializar variáveis para as escolhas do usuário
-        self.hair_color = "None"
         self.shirt = None
         self.pants = None
         self.shoes = None
         self.background = None
 
-        self.create_hairstyle_buttons()  # Chamar método para criar botões de escolha de estilo de cabelo
+        self.create_shirt_buttons()    # Chamar método para criar botões de escolha de estilo de camisola
 
     def clear_frame(self):
         # Método para limpar todos os widgets da janela
@@ -58,63 +56,6 @@ class OutfitDesignerApp:
 
         self.root.mainloop()
 
-    def create_hairstyle_buttons(self):
-        # Método para criar botões de escolha de estilo de cabelo
-        img_paths = [
-            r"Icons\Outfits\Hair\long.png",
-            r"Icons\Outfits\Hair\short.png",
-            r"Icons\Outfits\Hair\bald.png",
-            r"Icons\Outfits\Hair\afro.png",
-            r"Icons\Outfits\Hair\braids.png",
-            r"Icons\Outfits\Hair\mullet.png"
-        ]
-
-        hairstyles = {
-            "Comprido": "Cabelo longo e elegante.",
-            "Curto": "Cabelo curto e prático.",
-            "Careca": "Look moderno e careca, fácil de manter.",
-            "Afro": "Estilo afro naturalmente volumoso e encaracolado.",
-            "Tranças": "Tranças elegantes, tradicionais e protetoras.",
-            "Mullet": "Estilo mullet distintivo, negócios na frente, festa atrás."
-        }
-        self.create_buttons_from_paths(img_paths, self.set_hairstyle, hairstyles, "Selecione o estilo de cabelo")
-
-    def set_hairstyle(self, hairstyle):
-        # Método para definir o estilo de cabelo escolhido pelo usuário
-        self.hairstyle = hairstyle
-        self.clear_frame()
-        if self.hairstyle != "Look moderno e careca, fácil de manter.":
-            self.create_hair_color_buttons()  # Se não for careca, escolher cor do cabelo
-        else:
-            self.create_shirt_buttons()  # Caso contrário, escolher camisola
-
-    def create_hair_color_buttons(self):
-        # Método para criar botões de escolha de cor de cabelo
-        img_paths = [
-            r"Icons\Outfits\HairColors\blonde.png",
-            r"Icons\Outfits\HairColors\brunette.png",
-            r"Icons\Outfits\HairColors\redhead.png",
-            r"Icons\Outfits\HairColors\black.png",
-            r"Icons\Outfits\HairColors\gray.png",
-            r"Icons\Outfits\HairColors\purple.png"
-        ]
-
-        hair_colors = {
-            "Loiro": "Cabelo loiro claro e luminoso.",
-            "Moreno": "Cabelo castanho escuro e rico.",
-            "Ruivo": "Ruivo vibrante e ardente.",
-            "Preto": "Cabelo preto clássico e ousado.",
-            "Cinzento": "Cabelo grisalho sofisticado e maduro.",
-            "Roxo": "Cabelo roxo único e aventureiro."
-        }
-        self.create_buttons_from_paths(img_paths, self.set_hair_color, hair_colors, "Selecione a cor do cabelo")
-
-    def set_hair_color(self, hair_color):
-        # Método para definir a cor do cabelo escolhida pelo usuário
-        self.hair_color = hair_color
-        self.clear_frame()
-        self.create_shirt_buttons()
-
     def create_shirt_buttons(self):
         # Método para criar botões de escolha de camisola
         img_paths = [
@@ -126,12 +67,12 @@ class OutfitDesignerApp:
             r"Icons\Outfits\Shirts\tanktop.png"
         ]
         shirts = {
-            "T-Shirt": "T-Shirt casual e confortável.",
-            "Sweatshirt": "Camisolas aconchegantes.",
-            "Camisa": "Camisa versátil para ocasiões casuais e formais.",
-            "Sweater": "Vestuário quente para inverno.",
-            "Polo": "Camisa polo elegante.",
-            "Tank Top": "Top de tanque fresco e arejado para clima quente."
+            "T-Shirt": "Casual and comfortable T-shirt.",
+            "Sweatshirt": "Cozy sweatshirts.",
+            "Camisa": "Versatile shirt for casual and formal occasions.",
+            "Sweater": "Warm clothing for winter.",
+            "Polo": "Stylish polo shirt.",
+            "Tank Top": "Cool and airy tank top for warm weather."
         }
         self.create_buttons_from_paths(img_paths, self.set_shirt, shirts, "Selecione o tipo de camisola que deseja.")
 
@@ -153,12 +94,12 @@ class OutfitDesignerApp:
         ]
 
         pants = {
-            "Calças de Ganga": "Calças de ganga clássicas e duráveis.",
-            "Calções": "Calções confortáveis para clima quente.",
-            "Calças de fato de treino": "Calças de fato de treino ideais para descanso ou exercício.",
-            "Saia": "Saia versátil e feminina.",
-            "Calças": "Calças formais adequadas para o escritório.",
-            "Leggings": "Leggings elásticas e confortáveis para treinos ou uso casual."
+            "Calças de Ganga": "Classic and durable denim jeans.",
+            "Calções": "Comfortable shorts for warm weather.",
+            "Calças de fato de treino": "Ideal sweatpants for lounging or exercise.",
+            "Saia": "Versatile and feminine skirt.",
+            "Calças": "Formal trousers suitable for the office.",
+            "Leggings": "Stretchy and comfortable leggings for workouts or casual wear."
         }
         self.create_buttons_from_paths(img_paths, self.set_pants, pants, "Selecione o tipo de calças que deseja.")
 
@@ -179,12 +120,12 @@ class OutfitDesignerApp:
             r"Icons\Outfits\Shoes\slippers.png"
         ]
         shoes = {
-            "Sapatilhas": "Sapatilhas casuais e confortáveis para uso diário.",
-            "Botas": "Botas elegantes e robustas para várias condições.",
-            "Saltos Altos": "Saltos altos elegantes adequados para ocasiões formais.",
-            "Sandálias": "Sandálias leves perfeitas para clima mais quente.",
-            "Chinelos": "Chinelos confortáveis e práticos para uso diário.",
-            "Pantufas": "Pantufas acolhedoras e confortáveis para o inverno."
+            "Sapatilhas": "Casual and comfortable sneakers for daily use.",
+            "Botas": "Stylish and sturdy boots for various conditions.",
+            "Saltos Altos": "Elegant high heels suitable for formal occasions.",
+            "Sandálias": "Lightweight sandals perfect for warmer weather.",
+            "Chinelos": "Comfortable and practical slippers for daily wear.",
+            "Pantufas": "Cozy and comfortable slippers for winter."
         }
         self.create_buttons_from_paths(img_paths, self.set_shoes, shoes, "Selecione o tipo de calçado.")
 
@@ -205,12 +146,12 @@ class OutfitDesignerApp:
             r"Icons\Outfits\Backgrounds\forest.png"
         ]
         backgrounds = {
-            "Salão de baile": "Salão de baile com lustres e decoração elegante.",
-            "Parque": "Parque tranquilo com vegetação e caminhos para passeio.",
-            "Praia": "Praia ensolarada com areia e ondas do oceano.",
-            "Montanhas": "Montanhas cênicas com vistas deslumbrantes.",
-            "Cidade": "Paisagem urbana movimentada com arranha-céus e ruas movimentadas.",
-            "Floresta": "Floresta densa com árvores altas e vida selvagem."
+            "Salão de baile": "Ballroom with chandeliers and elegant decorations.",
+            "Parque": "Quiet park with greenery and pathways for strolling.",
+            "Praia": "Sunny beach with sand and ocean waves.",
+            "Montanhas": "Scenic mountains with breathtaking views.",
+            "Cidade": "Busy urban landscape with skyscrapers and bustling streets.",
+            "Floresta": "Dense forest with tall trees and wildlife."
         }
         self.create_buttons_from_paths(img_paths, self.set_background, backgrounds, "Selecione o fundo para a sua imagem")
 
@@ -240,9 +181,8 @@ class OutfitDesignerApp:
 
         self.root = root
 
-        # Montar o prompt com as escolhas do usuário
-        prompt = f"Hairstyle: {self.hairstyle}, {self.hair_color}, {self.shirt}, {self.pants}, Shoes: {self.shoes}"
-        search_prompt = "hair, clothes, shoes"  # Prompt de pesquisa para a API
+        prompt = f"{self.shirt}, {self.pants}, {self.shoes}"
+        search_prompt = "clothes and shoes"  # Prompt de pesquisa para a API
 
         url = f"https://api.stability.ai/v2beta/stable-image/edit/search-and-replace"
         headers = {

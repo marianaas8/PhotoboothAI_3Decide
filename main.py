@@ -248,7 +248,7 @@ def get_user_name():
     entry = tk.Entry(root, font=('Verdana', 25))
     entry.pack(pady=80)
 
-    button = tk.Button(root, text="Submit", command=submit_name, font=('Verdana', 18))
+    button = tk.Button(root, text="Continuar", command=submit_name, font=('Verdana', 18))
     button.pack(pady=10)
 
     root.mainloop()
