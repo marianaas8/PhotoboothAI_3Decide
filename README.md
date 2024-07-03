@@ -72,9 +72,8 @@ Imagens de alguns resultados podem ser encontrados na pasta `Resultados`. Exempl
 
 Clique na imagem abaixo para assistir a um vídeo demonstrativo da utilização do Photobooth AI:
 
-
 <td>
-  <a href="https://github.com/marianaas8/PhotoboothAI_3Decide/assets/126023917/50f812ff-498d-4277-a94c-6cb678e73d68">
+  <a href="https://vimeo.com/974645542">
     <img src="https://github.com/marianaas8/PhotoboothAI_3Decide/assets/126023917/50f812ff-498d-4277-a94c-6cb678e73d68" alt="video" style="width: 600px;"/>
   </a>
 </td>
