@@ -91,3 +91,8 @@ Clique na imagem abaixo para assistir a um vídeo demonstrativo da utilização 
 ## Créditos
 
 Este projeto utiliza APIs do ClipDrop e DreamStudio para processamento e transformação de imagens.
+
+## Licença
+
+Este projeto é licenciado sob os termos da [GNU GPLv3](./LICENSE.txt).
+
