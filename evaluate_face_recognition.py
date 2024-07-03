@@ -48,7 +48,7 @@ def compare_faces(original_image_path, transformed_image_path):
             all_faces_preserved = False
         else:
             print(f"Rosto {i+1}: Rosto preservado em {os.path.basename(transformed_image_path)}")
-        i +=1
+        i += 1
 
     return all_faces_preserved
 
@@ -59,6 +59,15 @@ def process_images_in_directory(directory):
     total_images = 0
     preserved_faces = []
     altered_faces = []
+
+    categories = {
+        "filmes": 0,
+        "países": 0,
+        "outfits": 0,
+        "superheróis": 0,
+        "desportos": 0,
+        "profissões": 0
+    }
 
     for image in images:
         # Verificar se é uma imagem original (não contém "_")
@@ -81,6 +90,20 @@ def process_images_in_directory(directory):
                     altered_faces.append(generated_image_path)
                     print(f"Resultado: Alterações detectadas em {generated_image}")
 
+                # Atualizar contagem de categorias
+                if "movie" in generated_image:
+                    categories["filmes"] += 1
+                elif "place" in generated_image or any(country in generated_image for country in ["greece", "japan", "uk", "usa", "italy", "china", "france", "brasil"]):
+                    categories["países"] += 1
+                elif "outfit" in generated_image:
+                    categories["outfits"] += 1
+                elif "superhero" in generated_image:
+                    categories["superheróis"] += 1
+                elif "sport" in generated_image:
+                    categories["desportos"] += 1
+                elif "profession" in generated_image:
+                    categories["profissões"] += 1
+
                 total_images += 1
 
     # Calcular estatísticas
@@ -96,13 +119,18 @@ def process_images_in_directory(directory):
         print(f"   {os.path.basename(image)}")
     print(f"Taxa de preservação de rostos: {preservation_rate:.2f}%")
 
-    return total_images, len(preserved_faces), len(altered_faces), preservation_rate
+    # Exibir contagem por estilo
+    print(f"\nContagem por estilo:")
+    for category, count in categories.items():
+        print(f"   Número de {category}: {count}")
+
+    return total_images, len(preserved_faces), len(altered_faces), preservation_rate, categories
 
 # Diretório onde estão as imagens
-directory = "Imagens"
+directory = "Resultados"
 
 # Processar imagens no diretório
-total_images, preserved_faces_count, altered_faces_count, preservation_rate = process_images_in_directory(directory)
+total_images, preserved_faces_count, altered_faces_count, preservation_rate, categories = process_images_in_directory(directory)
 
 # Gerar gráfico
 def generate_preservation_chart(total_images, preserved_faces_count, altered_faces_count, preservation_rate):

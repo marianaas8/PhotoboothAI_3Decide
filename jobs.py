@@ -191,6 +191,6 @@ def main(foto, user_name):
 if __name__ == "__main__":
     # Verificar se foram passados os argumentos corretos na linha de comando
     if len(sys.argv) != 3:
-        print("Usage: python superhero.py <image_path> <user_name>")
+        print("Usage: python jobs.py <image_path> <user_name>")
     else:
         main(sys.argv[1], sys.argv[2])  # Chamada da função principal com os argumentos fornecidos

@@ -233,7 +233,7 @@ def aplicar_background(prompt, name, edited_image, root):
         user_label.pack(side=tk.BOTTOM, pady=20)
 
         # Redimensionar a imagem para caber na altura da tela, mantendo a proporção
-        original_width, original_height = image.size
+        original_width, original_height = image_with_background.size
         new_height = 800
         new_width = int((new_height / original_height) * original_width)  # Calcular a largura proporcional
 

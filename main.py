@@ -150,6 +150,17 @@ def escolher_foto():
 
         print("A câmara foi ativada. A foto será tirada em 10 segundos.")
 
+        # Obter largura e altura do monitor principal
+        root2 = tk.Tk()
+        screen_width = root2.winfo_screenwidth()
+        screen_height = root2.winfo_screenheight()
+        root2.destroy()
+
+        # Definir tamanho da janela OpenCV para tela cheia
+        cv2.namedWindow("Câmara", cv2.WINDOW_NORMAL)
+        cv2.setWindowProperty("Câmara", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+        cv2.resizeWindow("Câmara", screen_width, screen_height)
+
         for i in range(10, 0, -1):
             ret, frame = cap.read()
             if not ret:

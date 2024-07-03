@@ -104,7 +104,7 @@ def main(foto, user_name):
 
     # Funções para escolher cada país e aplicar o fundo correspondente à imagem
     def escolher_franca():
-        escolha_pais(foto, "A romantic evening stroll along the Seine River, with the sparkling lights of the Eiffel Tower illuminating the skyline, couples sharing kisses beneath the shadow of Notre-Dame Cathedral, and the aroma of freshly baked baguettes drifting from nearby boulangeries.", "france", root)
+        escolha_pais(foto, "A romantic evening stroll along the Seine River, with the sparkling lights of the Eiffel Tower illuminating the skyline, couples sharing kisses beneath the shadow of Notre-Dame Cathedral", "france", root)
 
     def escolher_uk():
         escolha_pais(foto, "A bright and sunny morning in London, with the streets filled with people, the London Eye and Big Ben glistening in the sunlight against a backdrop of clear blue skies.", "uk", root)
@@ -167,6 +167,6 @@ def main(foto, user_name):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python superhero.py <image_path> <user_name>")
+        print("Usage: python places.py <image_path> <user_name>")
     else:
         main(sys.argv[1], sys.argv[2])

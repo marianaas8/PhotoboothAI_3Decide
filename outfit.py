@@ -284,6 +284,6 @@ def main(image_path, user_name):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python superhero.py <image_path> <user_name>")
+        print("Usage: python oytfit.py <image_path> <user_name>")
     else:
         main(sys.argv[1], sys.argv[2])  # Chamar função principal com argumentos da linha de comando
