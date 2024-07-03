@@ -9,18 +9,16 @@ A Photobooth AI da 3Decide trata-se de uma aplicação interativa que permite ao
 - **Processamento de Imagem em Tempo Real**: Utiliza a API ClipDrop para substituição de fundo e a API DreamStudio para outras transformações.
 - **Interface Amigável ao Utilizador**: Interface gráfica simples e intuitiva construída com Tkinter para navegação e interação fáceis.
 
-## Primeiros Passos
+## Passos para execução
 
 1. **Obter API's**:
+   
    - Antes de começar, necessitará de criar contas e obter chaves de API tanto do DreamStudio como do ClipDrop.
    - **DreamStudio**: Registe-se em [DreamStudio](https://dreamstudio.com) e obtenha a sua chave de API. DreamStudio fornece 25 créditos iniciais que podem ser utilizados para adquirir transformações adicionais.
    - **ClipDrop**: Registe-se em [ClipDrop](https://clipdrop.co) e obtenha a sua chave de API. ClipDrop oferece 100 créditos iniciais que podem ser utilizados para substituição de fundo e outras funcionalidades.
    - Depois de obter as API's, substitua-as em `API'S.py`, em "your_clipdrop_api" e "your_dreamstudio_api".
 
-3. **Download da Pasta de Imagens**:
-   - Existe uma pasta zipada disponível com as imagens usadas na Photobooth. Faça o download aqui [Icons.zip](https://drive.google.com/file/d/1JiDvgkUUgC67-279M98mjCBfky9KwIi3/view?usp=sharing). Certifique-se de descomprimir a pasta antes de correr utilizar a photobooth.
-
-4. **Instalação**
+3. **Instalação**
 
    ```bash
    git clone https://github.com/seu-nome-de-utilizador/photobooth-ai.git
@@ -28,7 +26,8 @@ A Photobooth AI da 3Decide trata-se de uma aplicação interativa que permite ao
    pip install -r requirements.txt
    ```
 
-5. **Executar a Aplicação**
+4. **Executar a Aplicação**
+   
    ```bash
    python main.py
    ```
