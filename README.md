@@ -1,6 +1,6 @@
 # Photobooth AI
 
-A Photobooth AI da 3Decide trata-se de uma aplicação interativa que permite aos utilizadores transformar as suas fotos através de diversos modelos de IA e APIs. Esta aplicação no estilo de cabine fotográfica oferece opções de transportação para diferentes países, transformação em super-heróis, troca de outfit, realização de desportos ou diferentes profissões, e ainda a participação num mundo cinematográfico à escolha.
+A Photobooth AI, implementada no estágio realizado na 3Decide, trata-se de uma aplicação interativa que permite aos utilizadores transformar as suas fotos através de diversos modelos de IA e APIs. Esta aplicação no estilo de cabine fotográfica oferece opções de transportação para diferentes países, transformação em super-heróis, troca de outfit, realização de desportos ou diferentes profissões, e ainda a participação num mundo cinematográfico à escolha.
 
 ## Recursos
 
